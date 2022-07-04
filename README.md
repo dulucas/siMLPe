@@ -92,3 +92,18 @@ python test.py --model-pth your/model/path
 #Test on 3DPW
 python test_3dpw.py --model-pth your/model/path 
 ```
+
+### Citation
+Coming soon..
+If you find this project useful in your research, please consider cite:
+```bash
+@article{--,
+  title={Back to MLP: A Simple Baseline for Human Motion Prediction},
+  author={Guo, Wen and Du, Yuming and Shen, Xi and Lepetit, Vincent and Xavier, Alameda-Pineda and Francesc, Moreno-Noguer},
+  journal={---},
+  year={2022}
+}
+```
+
+### Contact
+Feel free to contact [Wen](wen.guo@inria.fr) or [Me](yuming.du@enpc.fr) or open a new issue if you have any questions.
