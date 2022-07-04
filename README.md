@@ -62,13 +62,13 @@ Directory structure:
 ### Training
 ------
 #### H3.6M
-```
+```bash
 cd exps/baseline_h36m/
 sh run.sh
 ```
 
 #### AMASS
-```
+```bash
 cd exps/baseline_amass/
 sh run.sh
 ```
@@ -76,13 +76,13 @@ sh run.sh
 ## Evaluation
 ------
 #### H3.6M
-```
+```bash
 cd exps/baseline_h36m/
 python test.py --model-pth your/model/path
 ```
 
 #### AMASS
-```
+```bash
 cd exps/baseline_amass/
 #Test on AMASS
 python test.py --model-pth your/model/path 
