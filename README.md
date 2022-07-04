@@ -72,3 +72,18 @@ sh run.sh
 cd exps/baseline_amass/
 sh run.sh
 ```
+
+## Evaluation
+------
+#### H3.6M
+```
+cd exps/baseline_h36m/
+python test.py --model-pth your/model/path
+```
+
+#### AMASS
+```
+cd exps/baseline_amass/
+python test.py --model-pth your/model/path # test on AMASS
+python test_3dpw.py --model-pth your/model/path # test on 3DPW
+```
