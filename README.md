@@ -25,6 +25,7 @@ Official implementation for our paper **Back to MLP: A Simple Baseline for Human
 Download all the data and put them in the `./data` directory.
 
 [H3.6m](http://www.cs.stanford.edu/people/ashesh/h3.6m.zip)
+
 Directory structure:
 ```shell script
 H3.6m
@@ -36,6 +37,7 @@ H3.6m
 ```
 
 [AMASS](https://amass.is.tue.mpg.de/)
+
 Directory structure:
 ```shell script
 amass
