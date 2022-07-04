@@ -5,4 +5,4 @@ Official implementation for our paper **Back to MLP: A Simple Baseline for Human
 
 ### Network Architecture
 ------
-![NA](./.github/pipeline_v15.png| height=200)
+![NA](./.github/pipeline_v15.png| width=200)
