@@ -19,3 +19,40 @@ Official implementation for our paper **Back to MLP: A Simple Baseline for Human
 - einops
 - scipy
 - six
+
+### Data Preparation
+------
+Download all the data and put them in the `./data` directory.
+
+[H3.6m](http://www.cs.stanford.edu/people/ashesh/h3.6m.zip)
+Directory structure:
+```shell script
+H3.6m
+|-- S1
+|-- S5
+|-- S6
+|-- ...
+`-- S11
+```
+
+[AMASS](https://amass.is.tue.mpg.de/)
+Directory structure:
+```shell script
+amass
+|-- ACCAD
+|-- BioMotionLab_NTroje
+|-- CMU
+|-- ...
+`-- Transitions_mocap
+```
+
+[3DPW](https://virtualhumans.mpi-inf.mpg.de/3DPW/)
+
+Directory structure: 
+```shell script
+3dpw
+|-- sequenceFiles
+|   |-- test
+|   |-- train
+|   |-- validation
+```
