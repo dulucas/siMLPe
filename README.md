@@ -28,35 +28,38 @@ Download all the data and put them in the `./data` directory.
 
 Directory structure:
 ```shell script
-H3.6m
-|-- S1
-|-- S5
-|-- S6
-|-- ...
-`-- S11
+data
+|-- h36m
+|   |-- S1
+|   |-- S5
+|   |-- S6
+|   |-- ...
+|   |-- S11
 ```
 
 [AMASS](https://amass.is.tue.mpg.de/)
 
 Directory structure:
 ```shell script
-amass
-|-- ACCAD
-|-- BioMotionLab_NTroje
-|-- CMU
-|-- ...
-`-- Transitions_mocap
+data
+|-- amass
+|   |-- ACCAD
+|   |-- BioMotionLab_NTroje
+|   |-- CMU
+|   |-- ...
+|   |-- Transitions_mocap
 ```
 
 [3DPW](https://virtualhumans.mpi-inf.mpg.de/3DPW/)
 
 Directory structure: 
 ```shell script
-3dpw
-|-- sequenceFiles
-|   |-- test
-|   |-- train
-|   |-- validation
+data
+|--3dpw
+|   |-- sequenceFiles
+|   |   |-- test
+|   |   |-- train
+|   |   |-- validation
 ```
 
 ### Training
