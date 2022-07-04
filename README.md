@@ -84,6 +84,8 @@ python test.py --model-pth your/model/path
 #### AMASS
 ```
 cd exps/baseline_amass/
-python test.py --model-pth your/model/path # test on AMASS
-python test_3dpw.py --model-pth your/model/path # test on 3DPW
+# test on AMASS
+python test.py --model-pth your/model/path 
+# test on 3DPW
+python test_3dpw.py --model-pth your/model/path 
 ```
