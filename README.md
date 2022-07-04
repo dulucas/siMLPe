@@ -55,7 +55,7 @@ data
 Directory structure: 
 ```shell script
 data
-|--3dpw
+|-- 3dpw
 |   |-- sequenceFiles
 |   |   |-- test
 |   |   |-- train
