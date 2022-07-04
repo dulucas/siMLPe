@@ -24,7 +24,7 @@ Official implementation for our paper **Back to MLP: A Simple Baseline for Human
 ------
 Download all the data and put them in the `./data` directory.
 
-[H3.6m](http://www.cs.stanford.edu/people/ashesh/h3.6m.zip)
+[H3.6M](http://www.cs.stanford.edu/people/ashesh/h3.6m.zip)
 
 Directory structure:
 ```shell script
@@ -57,4 +57,18 @@ Directory structure:
 |   |-- test
 |   |-- train
 |   |-- validation
+```
+
+### Training
+------
+#### H3.6M
+```
+cd exps/baseline_h36m/
+sh run.sh
+```
+
+#### AMASS
+```
+cd exps/baseline_amass/
+sh run.sh
 ```
