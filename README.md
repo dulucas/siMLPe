@@ -5,4 +5,6 @@ Official implementation for our paper **Back to MLP: A Simple Baseline for Human
 
 ### Network Architecture
 ------
-<img align="center" src="https://github.com/dulucas/siMLPe/blob/main/.github/pipeline_v15.png" width="200" height="400">
+<p align="center">
+<img src="https://github.com/dulucas/siMLPe/blob/main/.github/pipeline_v15.png" width="200" height="400">
+</p>
