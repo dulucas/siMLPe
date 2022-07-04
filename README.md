@@ -8,3 +8,14 @@ Official implementation for our paper **Back to MLP: A Simple Baseline for Human
 <p align="center">
 <img src="https://github.com/dulucas/siMLPe/blob/main/.github/pipeline_v15.png" width="200" height="400">
 </p>
+
+### Requirements
+------
+- PyTorch >= 1.5
+- Numpy
+- CUDA >= 10.1
+- Easydict
+- pickle
+- einops
+- scipy
+- six
