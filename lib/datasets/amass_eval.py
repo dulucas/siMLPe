@@ -40,7 +40,7 @@ class AMASSEval(data.Dataset):
         assert self._split_name == 'test'
 
         seq_names += open(
-            os.path.join(self._amass_anno_dir, "sbmotion_test.txt"), 'r'
+            os.path.join(self._amass_anno_dir, "amass_test.txt"), 'r'
             ).readlines()
 
         file_list = []

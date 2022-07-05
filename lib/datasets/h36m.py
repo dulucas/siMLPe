@@ -63,7 +63,7 @@ class H36MDataset(data.Dataset):
             T = pose_info.shape[0]
             pose_info = pose_info.reshape(-1, 33, 3)
             pose_info[:, :2] = 0
-            pose_info = pose_info[:, 1:, :].reshape(-1, 3) #[:, 1:, :][:, self.used_joint_indexes, :].reshape(-1, 3)
+            pose_info = pose_info[:, 1:, :].reshape(-1, 3)
             pose_info = expmap2rotmat_torch(torch.tensor(pose_info).float()).reshape(T, 32, 3, 3)
             xyz_info = rotmat2xyz_torch(pose_info)
             xyz_info = xyz_info[:, self.used_joint_indexes, :]
@@ -98,7 +98,6 @@ class H36MDataset(data.Dataset):
         frame_indexes = np.arange(start_frame, start_frame + self.h36m_motion_input_length + self.h36m_motion_target_length)
         motion = self.h36m_seqs[idx][frame_indexes]
         if self.data_aug:
-            #torch.use_deterministic_algorithms(True)
             if torch.rand(1)[0] > .5:
                 idx = [i for i in range(motion.size(0)-1, -1, -1)]
                 idx = torch.LongTensor(idx)

@@ -38,11 +38,11 @@ class AMASSDataset(data.Dataset):
 
         if self._split_name == 'train' :
             seq_names += np.loadtxt(
-                os.path.join(self._amass_anno_dir.replace('amass', ''), "sbmotion_train.txt"), dtype=str
+                os.path.join(self._amass_anno_dir.replace('amass', ''), "amass_train.txt"), dtype=str
                 ).tolist()
         else :
             seq_names += np.loadtxt(
-                os.path.join(self._amass_anno_dir.replace('amass', ''), "sbmotion_test.txt"), dtype=str
+                os.path.join(self._amass_anno_dir.replace('amass', ''), "amass_test.txt"), dtype=str
                 ).tolist()
 
         file_list = []
