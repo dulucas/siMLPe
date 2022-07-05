@@ -3,7 +3,7 @@ Official implementation for our paper **Back to MLP: A Simple Baseline for Human
 
 In this paper, we propose a naive MLP-based network for human motion prediction. The network consists of only FCs, LayerNorms and Transpose. There is no non-linear activation in our network.
 
-[paper link](https://arxiv.org/abs/2002.12730)
+[paper link](https://arxiv.org/abs/2207.01567)
 
 ### Network Architecture
 ------
