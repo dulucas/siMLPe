@@ -96,7 +96,6 @@ python test_3dpw.py --model-pth your/model/path
 ```
 
 ### Citation
-Coming soon..
 If you find this project useful in your research, please consider cite:
 ```bash
 @article{guo2022back,
