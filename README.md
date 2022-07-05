@@ -99,10 +99,10 @@ python test_3dpw.py --model-pth your/model/path
 Coming soon..
 If you find this project useful in your research, please consider cite:
 ```bash
-@article{--,
+@article{guo2022back,
   title={Back to MLP: A Simple Baseline for Human Motion Prediction},
   author={Guo, Wen and Du, Yuming and Shen, Xi and Lepetit, Vincent and Xavier, Alameda-Pineda and Francesc, Moreno-Noguer},
-  journal={---},
+  journal={arXiv preprint arXiv:2207.01567},
   year={2022}
 }
 ```
