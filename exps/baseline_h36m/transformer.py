@@ -104,7 +104,7 @@ class TransMLP(nn.Module):
         x = self.mlps(x)
         return x
 
-def build_transmlp_2fc_st_sp_new(args):
+def build_mlps(args):
     if 'seq_len' in args:
         seq_len = args.seq_len
     else:

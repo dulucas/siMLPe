@@ -2,7 +2,7 @@ import copy
 
 import torch
 from torch import nn
-from transformer import build_transmlp_2fc_st_sp_new
+from transformer import build_mlps
 from einops.layers.torch import Rearrange
 
 class siMLPe(nn.Module):
@@ -13,7 +13,7 @@ class siMLPe(nn.Module):
         self.arr0 = Rearrange('b n d -> b d n')
         self.arr1 = Rearrange('b d n -> b n d')
 
-        self.motion_transformer = build_transmlp_2fc_st_sp_new(self.config.motion_mlp)
+        self.motion_transformer = build_mlps(self.config.motion_mlp)
 
         self.temporal_fc_in = config.motion_fc_in.temporal_fc
         self.temporal_fc_out = config.motion_fc_out.temporal_fc
