@@ -7,9 +7,8 @@ In this paper, we propose a naive MLP-based network for human motion prediction.
 
 ### Network Architecture
 ------
-<p align="center">
-<img src="https://github.com/dulucas/siMLPe/blob/main/.github/pipeline_v15.png" width="200" height="400">
-</p>
+![image](.github/pipeline.png)
+
 
 ### Requirements
 ------

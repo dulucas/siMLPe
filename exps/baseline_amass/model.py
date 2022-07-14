@@ -41,8 +41,7 @@ class siMLPe(nn.Module):
             motion_feats = self.motion_fc_in(motion_input)
             motion_feats = self.arr0(motion_feats)
 
-        motion_feats_ = self.motion_transformer(motion_feats)
-        motion_feats = motion_feats + motion_feats_
+        motion_feats = self.motion_transformer(motion_feats)
 
         if self.temporal_fc_out:
             motion_feats = self.motion_fc_out(motion_feats)
