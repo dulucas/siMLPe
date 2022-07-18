@@ -21,7 +21,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('--exp-name', type=str, default=None, help='=exp name')
-parser.add_argument('--seed', type=int, default=None, help='=seed')
+parser.add_argument('--seed', type=int, default=888, help='=seed')
 parser.add_argument('--temporal-only', action='store_true', help='=temporal only')
 parser.add_argument('--layer-norm-axis', type=str, default='spatial', help='=layernorm axis')
 parser.add_argument('--with-normalization', action='store_true', help='=use layernorm')
