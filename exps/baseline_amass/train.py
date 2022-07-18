@@ -97,7 +97,6 @@ dataset = AMASSDataset(config, 'train', config.data_aug)
 
 shuffle = True
 sampler = None
-train_sampler = None
 dataloader = DataLoader(dataset, batch_size=config.batch_size,
                         num_workers=config.num_workers, drop_last=True,
                         sampler=sampler, shuffle=shuffle, pin_memory=True)

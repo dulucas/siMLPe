@@ -75,7 +75,7 @@ def gen_velocity(m):
     dm = m[:, 1:] - m[:, :-1]
     return dm
 
-def train_step(h36m_motion_input, h36m_motion_target, model, continousrot_decoder, optimizer, nb_iter, total_iter, max_lr, min_lr) :
+def train_step(h36m_motion_input, h36m_motion_target, model, optimizer, nb_iter, total_iter, max_lr, min_lr) :
 
     if config.deriv_input:
         b,n,c = h36m_motion_input.shape
@@ -127,7 +127,6 @@ dataset = H36MDataset(config, 'train', config.data_aug)
 
 shuffle = True
 sampler = None
-train_sampler = None
 dataloader = DataLoader(dataset, batch_size=config.batch_size,
                         num_workers=config.num_workers, drop_last=True,
                         sampler=sampler, shuffle=shuffle, pin_memory=True)
@@ -138,7 +137,6 @@ eval_dataset = H36MEval(eval_config, 'test')
 
 shuffle = False
 sampler = None
-train_sampler = None
 eval_dataloader = DataLoader(eval_dataset, batch_size=128,
                         num_workers=1, drop_last=False,
                         sampler=sampler, shuffle=shuffle, pin_memory=True)
@@ -169,7 +167,7 @@ while (nb_iter + 1) < config.cos_lr_total_iters:
 
     for (h36m_motion_input, h36m_motion_target) in dataloader:
 
-        loss, optimizer, current_lr = train_step(h36m_motion_input, h36m_motion_target, model, continousrot_decoder, optimizer, nb_iter, config.cos_lr_total_iters, config.cos_lr_max, config.cos_lr_min)
+        loss, optimizer, current_lr = train_step(h36m_motion_input, h36m_motion_target, model, optimizer, nb_iter, config.cos_lr_total_iters, config.cos_lr_max, config.cos_lr_min)
         avg_loss += loss
         avg_lr += current_lr
 
