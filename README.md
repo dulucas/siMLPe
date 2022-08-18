@@ -1,5 +1,7 @@
 # siMLPe
-Official implementation for our paper **Back to MLP: A Simple Baseline for Human Motion Prediction(WACV 2023)**, a simple-yet-effective network achieving **SOTA** performance.
+**Back to MLP: A Simple Baseline for Human Motion Prediction(WACV 2023)** 
+
+A simple-yet-effective network achieving **SOTA** performance.
 
 In this paper, we propose a naive MLP-based network for human motion prediction. The network consists of only FCs, LayerNorms and Transpose. There is no non-linear activation in our network.
 
