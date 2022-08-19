@@ -3,7 +3,7 @@
 
 A simple-yet-effective network achieving **SOTA** performance.
 
-In this paper, we propose a naive MLP-based network for human motion prediction. The network consists of only FCs, LayerNorms and Transpose. There is no non-linear activation in our network.
+In this paper, we propose a naive MLP-based network for human motion prediction. The network consists of only FCs, LayerNorms and Transpose operation. There is no non-linear activation in our network.
 
 [paper link](https://arxiv.org/abs/2207.01567)
 
