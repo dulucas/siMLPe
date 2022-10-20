@@ -11,7 +11,7 @@ In this paper, we propose a naive MLP-based network for human motion prediction.
 ------
 ![image](.github/pipeline.png)
 
-> **_NOTE:_** In the paper, we asume that FC is realized by nn.conv1D, so we have two transpose operation before/after the spacial FC layers, see the pipeline figure. While in this repo, we use nn.Linear to implement FC, so in the code there is only one transpose after the spacial FC layer. These two implementations are equivalent whiile nn.Linear is a bit faster. (for a input tensor (b, n, d), nn.conv1D operates on dimention n, while nn.Linear operates on dimention d).
+> **_NOTE:_** In the paper, we asume that FC is realized by nn.conv1D, so we have two transpose operation before/after the spacial FC layers, see the pipeline figure. While in this repo, we use nn.Linear to implement FC, so in the code there is only one transpose after the spacial FC layer. These two implementations are equivalent. (for a input tensor (b, n, d), nn.conv1D operates on dimention n, while nn.Linear operates on dimention d).
 
 ### Requirements
 ------
