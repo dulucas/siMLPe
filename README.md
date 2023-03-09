@@ -28,7 +28,7 @@ In this paper, we propose a naive MLP-based network for human motion prediction.
 ------
 Download all the data and put them in the `./data` directory.
 
-[H3.6M](http://www.cs.stanford.edu/people/ashesh/h3.6m.zip)
+[H3.6M](https://drive.google.com/file/d/15OAOUrva1S-C_BV8UgPORcwmWG2ul4Rk/view?usp=share_link)
 
 Directory structure:
 ```shell script
